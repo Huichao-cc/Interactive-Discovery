@@ -1,0 +1,84 @@
+ <!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>
+            Where Is My Cat?
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" onclick="go('living');return false">
+                THE CURIOUS CASE
+            </a>
+            <button onclick="restart()">
+                Start over
+            </button>
+        </header>
+        <main>
+            <section class="intro">
+                <p class="eyebrow">
+                    A LITTLE MYSTERY AT HOME
+                </p>
+                <h1>
+                    Where is my cat?
+                </h1>
+                <p>
+                    A quiet apartment. An empty cat bed. Someone is hiding.
+                    <br>
+                    Explore in any order, collect a treat, and follow the clues.
+                </p>
+            </section>
+            <div class="layout">
+                <section class="scene">
+                    <img id="photo" alt="">
+                    <div class="caption">
+                        <p id="number" class="eyebrow">
+                        </p>
+                        <h2 id="title">
+                        </h2>
+                        <p id="description">
+                        </p>
+                        <div id="actions">
+                        </div>
+                        <p id="feedback" role="status" aria-live="polite">
+                        </p>
+                    </div>
+                </section>
+                <aside>
+                    <h2>
+                        Your search
+                    </h2>
+                    <p>
+                        Choose a place to explore.
+                    </p>
+                    <nav id="places">
+                    </nav>
+                    <div class="notebook">
+                        <h3>
+                            Pocket & notebook
+                        </h3>
+                        <p id="inventory">
+                        </p>
+                        <p id="clue">
+                        </p>
+                        <p id="progress">
+                        </p>
+                    </div>
+                    <button onclick="hint()">
+                        Need a hint?
+                    </button>
+                    <p id="hint" role="status">
+                    </p>
+                </aside>
+            </div>
+            <footer>
+                Interactive Discovery · Original photographs supplied by the project creator.
+            </footer>
+        </main>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
